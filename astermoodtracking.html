@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aster - Mood Tracking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header Styles */
+    header {
+      padding: 20px 0;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      background: linear-gradient(to right, #00d8ff, #00b7d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      position: relative;
+      padding-bottom: 5px;
+    }
+
+    nav ul li a:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #00d8ff;
+      transition: width 0.3s ease;
+    }
+
+    nav ul li a:hover:before {
+      width: 100%;
+    }
+
+    /* Mood Tracking Section Styles */
+    .mood-tracking-section {
+      padding: 80px 0;
+    }
+
+    .mood-tracking-section h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to right, #00d8ff, #00b7d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .mood-tracking-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .mood-tracking-text {
+      flex: 1;
+      margin-right: 40px;
+    }
+
+    .mood-tracking-text h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-family: 'Orbitron', sans-serif;
+      color: #00d8ff;
+    }
+
+    .mood-tracking-text p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .mood-tracking-image {
+      flex: 1;
+      text-align: right;
+    }
+
+    .mood-tracking-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .mood-tracking-cta {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .mood-tracking-cta a {
+      display: inline-block;
+      background-color: #00d8ff;
+      color: #121212;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .mood-tracking-cta a:hover {
+      background-color: #00b7d4;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #1f1f1f;
+      color: #ccc;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 14px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">Aster</div>
+      <nav>
+        <ul>
+          <!-- <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Contact</a></li> -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="mood-tracking-section">
+      <div class="container">
+        <h2>Mood Tracking: Gain Insights into Your Mental Well-Being</h2>
+        <div class="mood-tracking-content">
+          <div class="mood-tracking-text">
+            <h3>Understand Your Mood Patterns</h3>
+            <p>By regularly logging your mood, you can identify patterns and trends that may be influencing your overall well-being. Aster's intuitive tracking system allows you to record your feelings, thoughts, and experiences, creating a comprehensive picture of your emotional landscape.</p>
+
+            <h3>Identify Triggers and Stressors</h3>
+            <p>Through the mood tracking feature, you can pinpoint specific events, situations, or factors that may be impacting your mood. This knowledge can help you develop personalized coping strategies and make informed decisions about your mental health care.</p>
+
+            <h3>Improve Self-Awareness</h3>
+            <p>Regularly tracking your mood encourages self-reflection and increased self-awareness. By understanding the ebbs and flows of your emotional state, you can become more attuned to your needs, preferences, and the factors that contribute to your overall mental well-being.</p>
+
+            <h3>Collaborate with Professionals</h3>
+            <p>The mood tracking data you collect can be easily shared with your mental health professionals, such as therapists or counselors. This information can facilitate more meaningful and targeted discussions, leading to more effective treatment and support.</p>
+
+            <h3>Celebrate Your Progress</h3>
+            <p>As you consistently track your mood, you'll be able to observe your progress over time. Aster's mood tracking feature allows you to celebrate your successes, no matter how small, and stay motivated on your journey to better mental health.</p>
+          </div>
+          <div class="mood-tracking-image">
+            <img src="mood-tracking-image.jpg" alt="Mood Tracking">
+          </div>
+        </div>
+        <div class="mood-tracking-cta">
+          <a href="#">Start Tracking Your Mood</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Aster. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

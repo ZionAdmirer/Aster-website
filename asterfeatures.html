@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aster - Features</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header Styles */
+    header {
+      padding: 20px 0;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      background: linear-gradient(to right, #00d8ff, #00b7d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      position: relative;
+      padding-bottom: 5px;
+    }
+
+    nav ul li a:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #00d8ff;
+      transition: width 0.3s ease;
+    }
+
+    nav ul li a:hover:before {
+      width: 100%;
+    }
+
+    /* Features Section Styles */
+    .features-section {
+      padding: 80px 0;
+    }
+
+    .features-section h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to right, #00d8ff, #00b7d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .feature-card {
+      background-color: #1f1f1f;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+    }
+
+    .feature-card h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-family: 'Orbitron', sans-serif;
+      color: #00d8ff;
+    }
+
+    .feature-card p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .feature-card a {
+      display: inline-block;
+      background-color: #00d8ff;
+      color: #121212;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .feature-card a:hover {
+      background-color: #00b7d4;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #1f1f1f;
+      color: #ccc;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 14px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">Aster</div>
+      <nav>
+        <ul>
+          <!-- <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Contact</a></li> -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="features-section">
+      <div class="container">
+        <h2>Key Features</h2>
+        <div class="feature-card">
+          <h3>Mood Tracking</h3>
+          <p>Aster's advanced mood tracking feature allows you to monitor your emotional state over time. By regularly logging your mood, you can gain valuable insights into your mental well-being and identify patterns or triggers that may be affecting your mood.</p>
+          <a href="astermoodtracking.html">Learn More</a>
+        </div>
+        <div class="feature-card">
+          <h3>Interactive Exercises</h3>
+          <p>Aster offers a wide range of interactive exercises designed to help you manage stress, improve mindfulness, and enhance your overall mental health. From guided meditations to breathing techniques and journaling prompts, these exercises are tailored to your specific needs and preferences.</p>
+          <a href="asterinteractiveexercises.html">Try Now</a>
+        </div>
+        <div class="feature-card">
+          <h3>Resource Directory</h3>
+          <p>Aster's comprehensive resource directory provides you with easy access to a wealth of mental health information and support services. Whether you're looking for professional counseling, support groups, or self-help resources, our directory has you covered.</p>
+          <a href="asterresouecedirectory.html">Explore Resources</a>
+        </div>
+        <div class="feature-card">
+          <h3>Personalized Recommendations</h3>
+          <p>Based on your mood tracking and usage patterns, Aster provides personalized recommendations to help you improve your mental well-being. These recommendations may include suggested exercises, resources, or even connections to mental health professionals in your area.</p>
+          <a href="asterpersonalrecommendations.html">Get Recommendations</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Aster. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

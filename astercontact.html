@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aster - Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header Styles */
+    header {
+      padding: 20px 0;
+      
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      background: linear-gradient(to right, #00d8ff, #00b7d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+     
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      position: relative;
+      padding-bottom: 5px;
+    }
+
+    nav ul li a:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #00d8ff;
+      transition: width 0.3s ease;
+    }
+
+    nav ul li a:hover:before {
+      width: 100%;
+    }
+
+    /* Contact Section Styles */
+    .contact-section {
+      padding: 80px 0;
+    }
+
+    .contact-section h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to right, #00d8ff, #00b7d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .contact-form {
+      background-color: #1f1f1f;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form label {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      background-color: #2f2f2f;
+      color: #fff;
+    }
+
+    .contact-form textarea {
+      height: 150px;
+    }
+
+    .contact-form button {
+      background-color: #00d8ff;
+      color: #121212;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #00b7d4;
+    }
+
+    .contact-info {
+      margin-top: 40px;
+    }
+
+    .contact-info h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      font-family: 'Orbitron', sans-serif;
+      color: #00d8ff;
+    }
+
+    .contact-info p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #1f1f1f;
+      color: #ccc;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 14px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">Aster</div>
+      <nav>
+        <ul>
+          <!-- <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Contact</a></li> -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p>Address:  Naigaon Cross Rd, Dadar East, Mumbai, Maharashtra, 400014</p>
+          <p>Email: heyobsidian93@gmail.com</p>
+          <p>Phone: +91 9776194201</p>
+          <h3>CEO's Message</h3>
+          <p>At Aster, we are committed to providing accessible and personalized mental health support to individuals in need. Our mission is to empower you to take control of your well-being and thrive in all aspects of your life.</p>
+          <p>If you have any questions, feedback, or concerns, please don't hesitate to reach out to us. We're here to listen and help in any way we can.</p>
+          <p>Sincerely,</p>
+          <p>Sankur Kundu</p>
+          <p>Co-Founder and CEO, Aster</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Aster. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

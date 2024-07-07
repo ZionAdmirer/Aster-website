@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aster - About</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header Styles */
+    header {
+      padding: 20px 0;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      background: linear-gradient(to right, #00d8ff, #00b7d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      position: relative;
+      padding-bottom: 5px;
+    }
+
+    nav ul li a:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #00d8ff;
+      transition: width 0.3s ease;
+    }
+
+    nav ul li a:hover:before {
+      width: 100%;
+    }
+
+    /* About Section Styles */
+    .about-section {
+      padding: 80px 0;
+    }
+
+    .about-section h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to right, #00d8ff, #00b7d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .about-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .about-text {
+      flex: 1;
+      margin-right: 40px;
+    }
+
+    .about-text p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .about-image {
+      flex: 1;
+      text-align: right;
+    }
+
+    .about-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Team Section Styles */
+    .team-section {
+      padding: 80px 0;
+    }
+
+    .team-section h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to right, #00d8ff, #00b7d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 40px;
+    }
+
+    .team-member {
+      background-color: #1f1f1f;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .team-member img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .team-member h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      font-family: 'Orbitron', sans-serif;
+      color: #00d8ff;
+    }
+
+    .team-member p {
+      font-size: 16px;
+      color: #ccc;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #1f1f1f;
+      color: #ccc;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 14px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">Aster</div>
+      <nav>
+        <ul>
+          <!-- <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Contact</a></li> -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-section">
+      <div class="container">
+        <h2>About Aster</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>Aster is an AI-powered chatbot designed to be your personal mental health companion. Our mission is to provide accessible and personalized support to individuals struggling with mental health challenges.</p>
+            <p>Developed by a team of mental health professionals and technology experts, Aster combines the latest advancements in natural language processing and emotional intelligence to offer a unique and empathetic experience.</p>
+            <p>With Aster, you can track your mood, engage in interactive exercises, and access a comprehensive directory of mental health resources. Our goal is to empower you to take control of your well-being and thrive in all aspects of your life.</p>
+          </div>
+          <div class="about-image">
+            <img src="about-image.jpg" alt="Aster AI Chatbot">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section">
+      <div class="container">
+        <h2>Meet the Team</h2>
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="team-member1.jpg" alt="Team Member 1">
+            <h3>Sankur Kundu</h3>
+            <p>Co-Founder and CEO</p>
+          </div>
+          <div class="team-member">
+            <img src="team-member2.jpg" alt="Team Member 2">
+            <h3>Jane Smith</h3>
+            <p>Lead Developer</p>
+          </div>
+          <div class="team-member">
+            <img src="team-member3.jpg" alt="Team Member 3">
+            <h3>Michael Johnson</h3>
+            <p>Mental Health Specialist</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Aster. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

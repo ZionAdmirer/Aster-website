@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aster - Personalized Recommendations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header Styles */
+    header {
+      padding: 20px 0;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      background: linear-gradient(to right, #00d8ff, #00b7d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      position: relative;
+      padding-bottom: 5px;
+    }
+
+    nav ul li a:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #00d8ff;
+      transition: width 0.3s ease;
+    }
+
+    nav ul li a:hover:before {
+      width: 100%;
+    }
+
+    /* Personalized Recommendations Section Styles */
+    .personalized-recommendations-section {
+      padding: 80px 0;
+    }
+
+    .personalized-recommendations-section h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to right, #00d8ff, #00b7d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .recommendation-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 40px;
+    }
+
+    .recommendation-card {
+      background-color: #1f1f1f;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .recommendation-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .recommendation-card:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, #00d8ff, #00b7d4, #9370DB, #8B008B);
+      background-size: 400% 400%;
+      animation: backgroundAnimation 10s ease infinite;
+      z-index: -1;
+      opacity: 0.2;
+    }
+
+    .recommendation-card h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-family: 'Orbitron', sans-serif;
+      color: #00d8ff;
+    }
+
+    .recommendation-card p {
+      font-size: 16px;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .recommendation-card a {
+      display: inline-block;
+      background-color: #00d8ff;
+      color: #121212;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .recommendation-card a:hover {
+      background-color: #00b7d4;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #1f1f1f;
+      color: #ccc;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    /* Animations */
+    @keyframes backgroundAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">Aster</div>
+      <nav>
+        <ul>
+          <!-- <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Contact</a></li> -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="personalized-recommendations-section">
+      <div class="container">
+        <h2>Personalized Recommendations</h2>
+        <div class="recommendation-grid">
+          <div class="recommendation-card">
+            <h3>Suggested Exercises</h3>
+            <p>Based on your mood tracking data, we recommend trying our guided meditations and breathing techniques to manage stress and improve mindfulness.</p>
+            <a href="#">View Suggested Exercises</a>
+          </div>
+          <div class="recommendation-card">
+            <h3>Recommended Resources</h3>
+            <p>Our resource directory includes self-help books, mental health apps, and online support groups that may be beneficial for your specific needs.</p>
+            <a href="#">Explore Recommended Resources</a>
+          </div>
+          <div class="recommendation-card">
+            <h3>Professional Support</h3>
+            <p>If you're experiencing persistent mental health challenges, we suggest connecting with licensed therapists or counselors in your local area for personalized support.</p>
+            <a href="#">Find Professional Support</a>
+          </div>
+          <div class="recommendation-card">
+            <h3>Lifestyle Adjustments</h3>
+            <p>Making small changes to your daily routine, such as prioritizing sleep, engaging in regular exercise, and practicing gratitude, can have a positive impact on your mental well-being.</p>
+            <a href="#">Learn About Lifestyle Adjustments</a>
+          </div>
+          <div class="recommendation-card">
+            <h3>Coping Strategies</h3>
+            <p>Develop personalized coping strategies to manage specific mental health challenges, such as anxiety, depression, or trauma, based on your unique experiences and preferences.</p>
+            <a href="#">Discover Coping Strategies</a>
+          </div>
+          <div class="recommendation-card">
+            <h3>Progress Tracking</h3>
+            <p>Continue to track your mood and progress over time to assess the effectiveness of the recommended exercises, resources, and strategies in improving your mental well-being.</p>
+            <a href="#">Track Your Progress</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Aster. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

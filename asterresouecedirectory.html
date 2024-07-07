@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aster - Resources</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header Styles */
+    header {
+      padding: 20px 0;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      background: linear-gradient(to right, #00d8ff, #00b7d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      position: relative;
+      padding-bottom: 5px;
+    }
+
+    nav ul li a:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #00d8ff;
+      transition: width 0.3s ease;
+    }
+
+    nav ul li a:hover:before {
+      width: 100%;
+    }
+
+    /* Resources Section Styles */
+    .resources-section {
+      padding: 80px 0;
+    }
+
+    .resources-section h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to right, #00d8ff, #00b7d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 40px;
+    }
+
+    .resource-card {
+      background-color: #1f1f1f;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .resource-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .resource-card:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, #00d8ff, #00b7d4, #9370DB, #8B008B);
+      background-size: 400% 400%;
+      animation: backgroundAnimation 10s ease infinite;
+      z-index: -1;
+      opacity: 0.2;
+    }
+
+    .resource-card h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-family: 'Orbitron', sans-serif;
+      color: #00d8ff;
+    }
+
+    .resource-card p {
+      font-size: 16px;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .resource-card a {
+      display: inline-block;
+      background-color: #00d8ff;
+      color: #121212;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .resource-card a:hover {
+      background-color: #00b7d4;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #1f1f1f;
+      color: #ccc;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    /* Animations */
+    @keyframes backgroundAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">Aster</div>
+      <nav>
+        <ul>
+          <!-- <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Contact</a></li> -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="resources-section">
+      <div class="container">
+        <h2>Mental Health Resources</h2>
+        <div class="resource-grid">
+          <div class="resource-card">
+            <h3>Professional Counseling</h3>
+            <p>Connect with licensed therapists and mental health professionals for personalized support.</p>
+            <a href="#">Find a Therapist</a>
+          </div>
+          <div class="resource-card">
+            <h3>Support Groups</h3>
+            <p>Join online or in-person support groups to share experiences and find community.</p>
+            <a href="#">Explore Support Groups</a>
+          </div>
+          <div class="resource-card">
+            <h3>Self-Help Resources</h3>
+            <p>Access a variety of self-help tools, including mindfulness exercises and journaling prompts.</p>
+            <a href="#">Try Self-Help Resources</a>
+          </div>
+          <div class="resource-card">
+            <h3>Crisis Hotlines</h3>
+            <p>Reach out to crisis hotlines for immediate support and intervention during difficult times.</p>
+            <a href="#">Contact a Hotline</a>
+          </div>
+          <div class="resource-card">
+            <h3>Mental Health Apps</h3>
+            <p>Discover a curated selection of mental health apps to support your well-being on the go.</p>
+            <a href="#">Explore Mental Health Apps</a>
+          </div>
+          <div class="resource-card">
+            <h3>Educational Resources</h3>
+            <p>Learn more about mental health conditions, coping strategies, and wellness practices.</p>
+            <a href="#">Access Educational Resources</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Aster. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
